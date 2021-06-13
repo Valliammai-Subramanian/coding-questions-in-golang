@@ -1,7 +1,6 @@
 package concatenate
 
 import (
-	"fmt"
 	"sort"
 )
 
