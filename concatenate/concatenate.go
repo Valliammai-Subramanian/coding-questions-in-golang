@@ -21,7 +21,7 @@ func Concatenation(ary1 []int, ary2 []int, output *[]int)(error) {
 	return nil
 }
 
-func main() {
+func Main() {
     ary1 := []int{1,3,5,7}
 	ary2 := []int{2, 4, 6, 8}
 	output := []int{}	

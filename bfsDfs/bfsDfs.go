@@ -53,7 +53,7 @@ func dfs(n *node) bool {
 	return true
 }
 
-func main() {
+func Main() {
 	node1 := node{name: "node1", end: false}
 	node2 := node{name: "node2", end: false}
 	node3 := node{name: "node3", end: false}

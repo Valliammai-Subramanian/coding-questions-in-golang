@@ -8,5 +8,9 @@ import (
 )
 
 func main() {
+
+    concatenate.Main()
+    bfsDfs.Main()
+
     fmt.Println("Done!")
 }
