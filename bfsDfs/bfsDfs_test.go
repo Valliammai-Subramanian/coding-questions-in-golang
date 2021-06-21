@@ -4,10 +4,6 @@ import (
 	"testing"
 )
 
-// func values(){
-
-// }
-
 type variables struct {
 	node1   *node
 	node2   *node
@@ -17,7 +13,6 @@ type variables struct {
 	node6   *node
 }
 
-//values() acts a storage of default values and return a 'variables' struct containing default values
 func values() variables {
 	defaultValues := variables{
 		node1: &node{name: "node1", end: false},
@@ -80,22 +75,35 @@ func Test_bfs(t *testing.T) {
 	}
 }
 
-// func Test_dfs(t *testing.T) {
-// 	type args struct {
-// 		n *node
-// 	}
-// 	tests := []struct {
-// 		name string
-// 		args args
-// 		want bool
-// 	}{
-// 		// TODO: Add test cases.
-// 	}
-// 	for _, tt := range tests {
-// 		t.Run(tt.name, func(t *testing.T) {
-// 			if got := dfs(tt.args.n); got != tt.want {
-// 				t.Errorf("dfs() = %v, want %v", got, tt.want)
-// 			}
-// 		})
-// 	}
-// }
+func Test_dfs(t *testing.T) {
+	type args struct {
+		n *node
+	}
+	tests := []struct {
+		name string
+		args args
+		want bool
+	}{
+		// {
+		// 	name: "EmptyTest",
+		// 	args: args{
+		// 		n: nil,
+		// 	},
+		// 	want: true,
+		// },
+		{
+			name: "SingleElement",
+			args: args{
+				n: 	values().node1,
+			},
+			want: false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := dfs(tt.args.n); got != tt.want {
+				t.Errorf("dfs() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
