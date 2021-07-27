@@ -8,7 +8,8 @@ import (
     //"github.com/valliammai-subramanian/coding-questions-in-golang/substring"
     //"github.com/valliammai-subramanian/coding-questions-in-golang/reformat"
     // "github.com/valliammai-subramanian/coding-questions-in-golang/stringReverse"
-    "github.com/valliammai-subramanian/coding-questions-in-golang/kMeans"
+    //"github.com/valliammai-subramanian/coding-questions-in-golang/kMeans"
+    "github.com/valliammai-subramanian/coding-questions-in-golang/absDiff"
 
 )
 
@@ -19,7 +20,8 @@ func main() {
     //substring.Main()
     //reformat.Main()
     //stringReverse.Main()
-    kMeans.Main()
+    //kMeans.Main()
+    absDiff.Main()
 
     fmt.Println("Done!")
 }
