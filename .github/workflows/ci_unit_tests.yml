@@ -1,18 +1,19 @@
 on: 
   - push
   - pull_request
+  - workflow_dispatch
 
 name: Unit test
 jobs:
   test:
     strategy:
       matrix:
-        # package: 
-        #   - ./bfsDfs
-        #   - ./concatenate
-        #   - ./reformat
-        #   - ./substring
-        #   - ./... --ignore=./substring ./reformat 
+        package: 
+          # - ./bfsDfs
+          # - ./concatenate
+          # - ./reformat
+          # - ./substring
+          - ./... --ignore=./substring ./reformat 
         os: 
           - ubuntu-latest
           - macos-latest
